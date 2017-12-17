@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Galdeano');
 @font-face{
 	font-family:  'TituloPrincipal';
 	src: url("../_fonts/computer-font.ttf");
@@ -8,33 +9,29 @@
 	src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 @font-face {
-	font-family: "blabla";
+	font-family: "paragrafo";
 	src: url("../_fonts/Rajdhani-Medium.ttf");
 }
 p {
-	font-family: blabla;
+	font-family: galdeano, sans-serif;
+	font-size: 18px;
 	text-align: justify; 			
 	text-indent: 40px;
 	padding: 0px;
 	margin: 0px;
 }
+
 body {
 	background: rgb(160,160,160);
-	/*background: #606060;	*/
 }
 
 div#interface {
-	/*position: relative;*/
 	display: block;
 	width: 1200px;
-	/*height: 1600px;*/
 	background-color: #eeeeee;
-	/*left: 50%;
-	transform: translate(-50%, 0);
-	top: -20px;*/
-	margin: -21.5px auto 0px auto; /*margem fora do conteiner*/
+	margin: -21.5px auto 0px auto;
 	box-shadow: 0px 0px 20px black;
-	padding: 2px 25px 1px 25px; /*margem dentro do conteiner*/
+	padding: 2px 25px 1px 25px; 
 }
 
 div#interface h2 {
@@ -54,13 +51,14 @@ img#icone {
 header#cabecalho {
 	border-bottom: 1.5px #606060 solid;
 	height: 150px;
-	/*background: url("../_imagens/1000px-Google_Glass_logo.svg.png") no-repeat 0px 100px;*/
 }
+
 img#glass {
 	max-height: 40px;
 	position: relative;
 	top: 20px;
 }
+
 header#cabecalho h1{
 	font-family: arial, sans-serif;
 	font-size: 30pt;
@@ -81,7 +79,6 @@ hgroup h1 {
 	color: #000000;
 	padding-bottom: 0px;
 	margin-bottom: 0px; 
-	/*text-align: center;*/
 }
 hgroup h3 {
 	font-family: arial, sans-serif;
@@ -90,11 +87,13 @@ hgroup h3 {
 	padding-bottom: 0px;
 	margin-bottom: -20px;
 }
+
 hgroup h5 {
 	padding-top: 0px;
 	margin-top: -12px;
 	text-align: left;
 }
+
 a {
 	color: #606060;
 	text-decoration: none;
@@ -140,17 +139,17 @@ nav#menu {
 
 nav#menu ul, ol {
 	list-style: none;
-	text-transform: uppercase; /*deixa letra maiuscula*/
+	text-transform: uppercase; 
 	position: absolute;
 	top: -20px;
 	left: 620px; 
 }
 
 nav#menu li {
-	display: inline-block; /*deixar o menu um do lado do outro*/
+	display: inline-block;
 	background: #dddddd;
-	padding: 8px; /*espaço dentro dos botoes*/
-	margin: 2px; /*espaço fora dos botoes*/
+	padding: 8px; 
+	margin: 2px; 
 	transition: 1s;
 }
 
@@ -170,6 +169,7 @@ nav#menu a{
 nav#menu a:hover{
 	color: rgb(255,255,255);
 }
+
 section#corpo {
 	display: block;
 	width: 640px;
@@ -178,18 +178,21 @@ section#corpo {
 	padding-right: 40px; 
 	padding-bottom: 30px; 
 }
+
 aside#lateral {
 	display: block;
 	width: 480px;
 	float: right;
 	padding-left: 35px; 
 }
+
 footer#rodape {
 	clear: both;
 	border-top: 2px solid black;
 	padding: 0px;
 	margin: 0px;
 }
+
 table {
 	border: 1px solid black;
 	border-spacing: 0px;
@@ -197,6 +200,7 @@ table {
 	margin-right: auto;
 	margin-left: auto;
 }
+
 table td {
 	border: 1px solid #202020;
 	border-spacing: 0px;
@@ -212,11 +216,13 @@ table td.esquerda {
 	color: #dddddd;
 	font-weight: bold;
 }
+
 table caption {
 	color: #888888;
 	font-size: 13pt;
 	font-weight: bold;
 }
+
 table span {
 	display: block;
 	color: black;

@@ -1,19 +1,50 @@
-Google Glass
-A revolução do Google está chegando
-
-[AQUI ENTRA UMA FOTO]
-
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
-
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <script src="_javascript/funcoes.js"></script>
+</head>
+<body>
+<div id="interface">    
+    <header id ="cabecalho">
+        <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google e do mundo chegou</h2>
+            <img id="glass" src="_imagens/1000px-Google_Glass_logo.svg.png">
+        </hgroup>
+            <img id="icone" src="_imagens/contato.png">
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="disc">
+                <li onmouseover="mudarFoto('_imagens/home.png')" onmouseout="mudarFoto('_imagens/contato.png')">
+                    <a href="index.html">Home</a>
+                </li>
+                <li onmouseover="mudarFoto('_imagens/especificacoes.png')" onmouseout="mudarFoto('_imagens/contato.png')">
+                    <a href="specs.html">Especificações</a>
+                </li>
+                <li onmouseover="mudarFoto('_imagens/fotos.png')" onmouseout="mudarFoto('_imagens/contato.png')">
+                    <a href="fotos.html">Fotos</a>
+                </li>
+                <li onmouseover="mudarFoto('_imagens/multimidia.png')" onmouseout="mudarFoto('_imagens/contato.png')">
+                    <a href="multimidia.html">Multimídia</a>
+                </li>
+                <li onmouseover="mudarFoto('_imagens/contato.png')" onmouseout="mudarFoto('_imagens/contato.png')">
+                    <a href="fale-conosco.html">Fale conosco</a>
+                </li>
+            </ul>
+        </nav>  
+    </header>
+<section id="corpo-full">
+    <hgroup>
+        <h3>Glass > Contato</h3>
+        <h1>Formulário de Contato</h1>
+        <h5>Atualizado em 27/Nov/2017<br/>
+        por Túlio Marcos.</h5>
+    </hgroup>
+</section>
 
 Identificação do Usuário
     Nome:
@@ -42,6 +73,11 @@ Quero um Google Glass
 
 
 [BOTÃO ENVIAR]
-
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+    
+    <footer id="rodape">
+        <h5 style="text-align: center;">Copyright 2017 - by Túlio Marcos <br/>
+        <a href="https://www.facebook.com/tulio.marcos.549" target="_blank">Facebook</a> | <a href="https://github.com/tuliomarcos" target="_blank">Github</a></h5>
+    </footer>
+</div>
+</body>
+</html
