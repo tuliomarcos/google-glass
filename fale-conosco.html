@@ -45,35 +45,36 @@
         por Túlio Marcos.</h5>
     </hgroup>
 </section>
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
-    
+    <fieldset id="user">
+        <legend>Identificação do Usuário</legend>
+            <p>Nome: <input type="text" name="aName" id="idName" size="40" maxlength="40" placeholder="Nome completo"></p>
+            <p>Senha: <input type="password" name="aPass" id="idPass" size="10" maxlength="8" placeholder="8 Digitos"></p>
+            <p>E-mail: <input type="email" name="aEmail" id="idEmail"></p>
+            <fieldset id="sexo"><legend>Sexo:</legend>
+                <input type="radio" name="aSexo" id="idMasc"><label> Masculino</label><br/>
+                <input type="radio" name="aSexo" id="idFem"><label> Feminino</label></fieldset>
+            <p>Data de Nascimento: <input type="date" name="aDate" id="idDate"></p>
+    </fieldset>
+    <fieldset id="pedido">
+        <legend id="endereco">Endereço do Usuário</legend>
+            <p>Logradouro: <input type="text" name="aEndereco" id="idEndereco" placeholder="Rua, Av, Trav. e Bairro" size="40"></p>
+            <p>Número: <input type="number" name="aNumero" min="1" max="9999"></p>
+            <p>Estado:</p>
+            <p>Cidade:</p>
+    </fieldset>
+    <fieldset id="msg">
+        <legend>Mensagem do Usuário</legend>
+            <p>Grau de Urgência:</p>
+            <p>Mensagem:</p>
+    </fieldset>
+    <fieldset id="">
+        <legend>Quero um Google Glass</legend>
+            <p>Gostaria de adquirir um Google Glass quando disponível</p>
+            <p>Cor:</p>
+            <p>Quantidade:</p>
+            <p>Preço Total: R$</p>
+    </fieldset>    
+    <button type="spend">Enviar</button>
     <footer id="rodape">
         <h5 style="text-align: center;">Copyright 2017 - by Túlio Marcos <br/>
         <a href="https://www.facebook.com/tulio.marcos.549" target="_blank">Facebook</a> | <a href="https://github.com/tuliomarcos" target="_blank">Github</a></h5>
