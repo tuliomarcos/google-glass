@@ -1,0 +1,16 @@
+h1 {
+  color: #cba750;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 15px #000;
+}
+
+.baguncinha {
+  display: flex;
+  justify-content: center;
+  font-family: arial;
+  font-size: 14px;
+  color: #cba750;
+  background: #ccc;
+  line-height: 40px;
+}

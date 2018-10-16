@@ -1,0 +1,5 @@
+# node.js
+node_modules/
+
+# arquivos de gerenciamento MacOS
+.DS_Store

@@ -1,0 +1,27 @@
+{
+  "name": "google-glass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuliomarcos/google-glass.git"
+  },
+  "author": "Tulio Marcos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuliomarcos/google-glass/issues"
+  },
+  "homepage": "https://github.com/tuliomarcos/google-glass#readme"
+}

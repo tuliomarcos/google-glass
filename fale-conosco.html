@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Google Glass</title>
-    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
+    <script src="_javascript/jquery-3.2.1.min.js"></script>
     <script src="_javascript/funcoes.js"></script>
 </head>
 <body>
@@ -45,33 +47,68 @@
         por Túlio Marcos.</h5>
     </hgroup>
 </section>
-<fieldset>
-<legend id="Usuário">Identificação do Usuário</legend>
-    <label for="cNome">Nome: </label><input type="text" name="aNome"/><br>
-    Senha: <input type="password" name="aSenha" placeholder="Minimo 8 dígitos" minlength="8" maxlength="20"><br>
-    E-mail: <input type="email" name="aEmail"><br>
-    Sexo: <input type="radio" name="aSexo"> Masculino <input type="radio" name="aSexo"> Feminino <br>
-    Data de Nascimento:
-</fieldset>
-<fieldset><legend>Endereço do Usuário</legend>
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-</fieldset>
-<fieldset><legend>Mensagem do Usuário</legend>
-    Grau de Urgência:
-    Mensagem:
-</fieldset>
-<fieldset><legend>Quero um Google Glass</legend>
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-</fieldset>
-
-[BOTÃO ENVIAR]
-    
+<form method="post" id="contato" action="tulio.marcos@icloud.com">
+    <fieldset id="usuario"><legend id="Usuário">Identificação do Usuário</legend>
+        <p><label for="nome">Nome: </label><input type="text" name="aNome" id="nome" placeholder="Nome Completo" /><br></p>
+        <p><label for="aSenha"> Senha: </label><input type="password" id="aSenha" placeholder="8 dígitos" size="10" maxlength="8"><br></p>
+        <p><label for="">E-mail: </label><input type="email" id="aEmail" size="30"><br></p>
+        <p>Sexo:
+            <input type="radio" name="aSexo" id="masculino"><label for="masculino"> Masculino </label>
+            <input type="radio" name="aSexo" id="feminino"><label for="feminino"> Feminino </label><br></p>
+        <p><label for="date">Data de Nascimento: </label><input type="date" id="date"></p>
+    </fieldset>
+    <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+        <p><label for="cep">CEP: </label><input type="text" class="cep" id="cep" placeholder="Digite seu CEP"><br/></p>
+        <p><label for="street">Rua: </label><input type="text" id="street"><br/></p>
+        <p><label for="neighborhood">Bairro: </label><input type="text" id="neighborhood"><br/></p>
+        <p><label for="state">Estado: </label><select id="state">
+            <option>Selecionar...</option>
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PN">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+                <option value="Al">Alagoas</option>
+                <option value="PE">Pernambuco</option>
+                <option value="CE">Ceará</option>
+                <option value="SE">Sergipe</option>
+                <option value="PA">Paraíba</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="BA">Bahia</option>
+                <option value="MA">Maranhão</option>
+                <option value="PI">Piauí</option>
+            </optgroup>
+        </select><br/></p>
+        <p><label for="city">Cidade: </label><input type="text" id="city" list="cidades"><datalist id="cidades">
+            <option value="Rio de Janeiro"></option>
+            <option value="Niterói"></option>
+            <option value="Nova Iguaçu"></option>
+            <option>Belford Roxo</option>
+        </datalist>
+        <p><label for="number">Número: </label><input type="number" id="number" min="0" max="99999"></p>
+    </fieldset>
+    <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+        <p><label for="urg">Grau de Urgência: </label><input type="range" id="urg" min="0" max="10"></p>
+        <p><label for="msg">Mensagem: </label><textarea id="msg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem, responderemos o quanto antes!"></textarea></p>
+    </fieldset>
+    <fieldset id="pedido"><legend>Quero um Google Glass</legend>
+        <p><input type="checkbox" id="pedido" checked>
+        <label for="pedido">Gostaria de adquirir um Google Glass quando disponível</label></p>
+        <p>Cor: <input type="color" id="color" value="#50aaff"></p>
+        <p>Quantidade: <input type="number" id="quantidade" min="0" max="5" value="0" oninput="calcTotal()"></p>
+        <p>Preço Total: R$ <input type="text" id="total" placeholder="Total a pagar" readonly></p>
+    </fieldset>
+</form>
+<div class="button">
+    <input type="image" src="_imagens/botao-enviar.png">
+</div>
     <footer id="rodape">
         <h5 style="text-align: center;">Copyright 2017 - by Túlio Marcos <br/>
         <a href="https://www.facebook.com/tulio.marcos.549" target="_blank">Facebook</a> | <a href="https://github.com/tuliomarcos" target="_blank">Github</a></h5>

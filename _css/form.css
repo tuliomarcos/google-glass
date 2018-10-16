@@ -1,0 +1,112 @@
+p {
+	margin: 8px;
+}
+
+input#number {
+	width: 70px;
+}
+
+input#neighborhood {
+	width: 174px;
+}
+
+input#city {
+	width: 168px;
+}
+
+select#state {
+	width: 173px;
+}
+
+form {
+	width: 550px;
+	margin: auto;
+}
+
+input, textarea, select {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	opacity: .6;
+	border-radius: 4px;
+}
+
+input:hover, textarea:hover, select:hover {
+	background: #ddd;
+}
+
+textarea {
+	margin-top: 10px;
+}
+
+input[type=color] {
+	margin-left: 5px;
+}
+
+legend {
+	color: #666;
+	font-weight: bold;
+	font-size: 15pt;
+	font-family: sans-serif;
+}
+
+fieldset {
+	border-color: #cecece;
+}
+
+fieldset#usuario {
+	background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#endereco {
+	background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+
+fieldset#mensagem {
+	background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+fieldset#pedido {
+	background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+}
+
+fieldset#pedido p {
+	margin: 16px;
+}
+
+input[type=image] {
+	display: block;
+	margin: 10px auto;
+}
+
+//scroll
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #777;
+  border-radius: 8px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 12px;
+  background: #fffffa;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #848484;
+}
